@@ -48,7 +48,6 @@ int main() {
 
 	/* processo filho */
 	if (pid == 0) { 
-		
 		while (1) {
 			/* substitui o printf("%d ", value); */
 			sprintf(value_string, "%d", value);

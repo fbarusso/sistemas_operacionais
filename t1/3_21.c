@@ -16,8 +16,7 @@ int main() {
     pid_t pid;
     pid = fork();
 
-    if (pid == 0) { /* child process */
-        
+    if (pid == 0) { /* processo filho */
         while (1) {
             printf("%d ", value);
             if (value == 1) {
@@ -30,7 +29,7 @@ int main() {
 
         return 0;   
 
-    } else if (pid > 0) { /* parent process */
+    } else if (pid > 0) { /* processo pai */
         wait(NULL);
         return 0;
     }
